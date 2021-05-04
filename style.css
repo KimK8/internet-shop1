@@ -21,6 +21,7 @@ body {
 
 .header__menu-top {
     display: inline-block;
+    position: relative;
 }
 
 .header__top {
@@ -33,7 +34,52 @@ body {
 }
 
 .top {
-    margin-left: 25px;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+/*------MENU------*/
+
+.header__menu-box {
+    box-sizing: border-box;
+    width: 232px;
+    height: 764px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 200px;
+    top: 44px;
+    padding: 37px 73px 157px 33px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 5px 10px -5px #6F6E6E;
+    box-shadow: -3px 0 10px -5px #6F6E6E
+}
+
+.header__menu-top:hover .header__menu-box {
+    display: flex;
+}
+
+.menu__title {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.menu__item {
+    margin-top: 20px;
+}
+
+.menu__item-title {
+    font-size: 14px;
+    font-weight: 400;
+    color: #F16D7F;
+}
+
+.memu__item-link {
+    display: block;
+    padding-left: 22px;
+    padding-top: 11px;
+    text-decoration: none;
+    color: #6F6E6E;
 }
 
 .top__banner {
@@ -55,7 +101,7 @@ body {
 }
 
 .top__banner-group {
-    margin-right: -650px;
+    margin-right: -490px;
     margin-top: -50px;
 }
 
@@ -205,14 +251,23 @@ body {
 
 .product__item {
     width: 360px;
-    height: 582px;
+    /*height: 582px;*/
     background-color: #F8F8F8;
     margin-bottom: 30px;
     position: relative;
 }
 
+.product__item:hover .product__card-img_hover {
+    filter: brightness(50%);
+    transition: 0.3s;
+}
+
+.product__item:hover .add-box {
+    display: flex;
+}
+
 .product__desc {
-    margin: 19px 18px;
+    padding: 19px 18px;
 
 }
 
@@ -240,6 +295,27 @@ body {
     font-size: 16px;
 }
 
+.add-box {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 188px;
+    justify-content: center;
+}
+
+.add {
+    display: flex;
+    align-items: center;
+    padding: 11px 13.5px;
+    border: 1px solid #FFFFFF;
+    text-decoration: none;
+}
+
+.add-txt {
+    color: #ffffff;
+    padding-right: 13px;
+    padding-left: 11px;
+}
 
 /*-------PRODUCT BUTTON----------*/
 .product__button {
@@ -262,6 +338,7 @@ body {
 .product__button:hover {
     border: 1px solid #F16D7F;
     background-color: #F26376;
+    transition: 0.3s;
 }
 
 .product__button-link:hover {
@@ -390,6 +467,7 @@ body {
 
 .footer__subscribe-button:hover {
     background-color: #E05C6E;
+    transition: 0.3s;
 }
 
 .footer__subscribe-title-bold {
@@ -470,11 +548,14 @@ body {
     align-items: center;
     background-color: #FBFBFB;
     flex-direction: row;
+    text-decoration: none;
+    color: #000000;
 }
 
 .footer__link-bg:hover {
     background-color: #F16D7F;
     transition: 0.3s;
+    color: #ffffff;
 }
 
 /*-------------MEDIA-----------*/

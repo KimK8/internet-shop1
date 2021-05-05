@@ -38,6 +38,11 @@ body {
     margin-left: 15px;
 }
 
+.top__right {
+    display: flex;
+    align-items: center;
+}
+
 /*------MENU------*/
 
 .header__menu-box {

@@ -399,7 +399,7 @@ body {
 
 .footer__bg {
     max-height: 448px;
-    background-image: url(img/background-img.svg);
+    background-image: url(../img/background-img.svg);
     background-repeat: no-repeat;
     background-position: center;
 }

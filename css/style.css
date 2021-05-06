@@ -153,7 +153,7 @@ body {
 .top__banner-box {
     box-sizing: border-box;
     height: 764px;
-    background-image: url(img/Layer_57-removebg-preview\ 1.png);
+    background-image: url(../img/Layer_57-removebg-preview\ 1.png);
     background-repeat: no-repeat;
     background-position: -220px center;
     display: flex;
@@ -229,7 +229,7 @@ body {
     position: relative;
     width: 100%;
     height: 180px;
-    background-image: url(img/accesories.jpg);
+    background-image: url(../img/accesories.jpg);
     background-size: cover;
     text-align: center;
     text-decoration: none;
@@ -237,15 +237,15 @@ body {
 }
 
 .main__top-for_wm {
-    background-image: url(img/for_wm.jpg);
+    background-image: url(../img/for_wm.jpg);
 }
 
 .main__top-for_m {
-    background-image: url(img/for_m.jpg);
+    background-image: url(../img/for_m.jpg);
 }
 
 .main__top-for_k {
-    background-image: url(img/for_k.jpg);
+    background-image: url(../img/for_k.jpg);
 }
 
 .white,
@@ -478,7 +478,7 @@ body {
 
 .footer__bg {
     max-height: 448px;
-    background-image: url(img/background-img.svg);
+    background-image: url(../img/background-img.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -649,7 +649,7 @@ body {
     .top__banner-box {
         box-sizing: border-box;
         height: 368px;
-        background-image: url(img/bg-img-768.svg);
+        background-image: url(../img/bg-img-768.svg);
         background-repeat: no-repeat;
         background-position: -80px center;
     }
@@ -684,7 +684,7 @@ body {
 
     .footer__bg {
         max-height: 614px;
-        background-image: url(img/background-img-768.svg);
+        background-image: url(../img/background-img-768.svg);
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -897,7 +897,7 @@ body {
 
     .footer__bg {
         max-height: 614px;
-        background-image: url(img/background-img-768.svg);
+        background-image: url(../img/background-img-768.svg);
         background-repeat: no-repeat;
         background-position: center;
         margin-bottom: 0;

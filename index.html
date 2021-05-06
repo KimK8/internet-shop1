@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.6.0.js"></script>
 </head>
 <body>
     <div class="header">
@@ -17,9 +18,13 @@
             <div class="container header__menu">
                 <div class="top__left"><a href="index.html" class="top__logo"><img src="img/Logo.svg" alt=""></a></div>
                 <ul class="top__right">
-                    <li class="header__menu-top top"><a href="#" class="header__menu-top top"><img src="img/menu.png" alt=""><div class="header__menu-block"></div></a>
+                    <li class="header__menu-top top">
+                        <div class="header__menu-burger">
+                                <span></span>
+                            </div>
+                        <nav class="header__menu-block">
                         <div class="header__menu-box">
-                            <h3 class="menu__title">MENU</h3>
+                                <h3 class="menu__title">MENU</h3>
                                 <div class="menu__item">
                                     <h3 class="menu__item-title">MAN</h3>
                                     <a class="memu__item-link" href="#">Accessories</a>
@@ -44,7 +49,8 @@
                                     <a class="memu__item-link" href="">Shirts</a>
                                     <a class="memu__item-link" href="">Bags</a>
                                 </div>
-                        </div>
+                            </div>
+                        </nav>
                     </li>
                     <li class="header__menu__acc top"><a href="#" class="header__menu__acc top"><img src="img/Forma_1.png" alt=""></a></li>
                     <li class="header__menu__cart top"><a href="#" class="header__menu__cart top"><img src="img/cart.png" alt=""></a></li>
@@ -248,5 +254,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

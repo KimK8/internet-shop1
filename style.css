@@ -422,7 +422,6 @@ body {
     background-image: url(img/background-img.svg);
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 8px;
 }
 
 
@@ -635,7 +634,6 @@ body {
         background-image: url(img/background-img-768.svg);
         background-repeat: no-repeat;
         background-position: center;
-        margin-bottom: 0;
     }
 
     .footer__subscribe {
@@ -728,7 +726,6 @@ body {
         background-image: url(img/background-img-768.svg);
         background-repeat: no-repeat;
         background-position: center;
-        margin-bottom: 0;
     }
 
     .footer__subscribe {

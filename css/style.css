@@ -277,6 +277,26 @@ body {
     left: 125px;
 }
 
+.main__top-for_wm:hover {
+    background-image: url(../img/for-m-hover.svg);
+    transition: 0.3s;
+}
+
+.main__top-for_m:hover {
+    background-image: url(../img/for-m-hover_.svg);
+    transition: 0.3s;
+}
+
+.main__top-for_k:hover {
+    background-image: url(../img/for-k-hover.svg);
+    transition: 0.3s;
+}
+
+.main__top-accesories:hover {
+    background-image: url(../img/accesories-hover.svg);
+    transition: 0.3s;
+}
+
 /*.center-xl {
     position: absolute;
     top: 70px;

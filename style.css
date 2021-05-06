@@ -566,9 +566,7 @@ body {
 /*-------------MEDIA-----------*/
 
 @media (max-width: 1105px) {
-    .top__banner-group {
-        margin-right: -550px;
-    }
+
 
     .product {
         display: flex;

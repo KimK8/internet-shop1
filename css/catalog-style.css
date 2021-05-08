@@ -15,7 +15,6 @@ body {
 .pink {
     color: #F16D7F;
     font-size: 24px;
-    font-family: Lato, sans-serif;
 }
 
 .header__menu {
@@ -133,12 +132,12 @@ body {
 }
 
 .header__menu-burger.active::before {
-    transform: rotate(45deg);
+    transform: rotate(135deg);
     top: 11px;
 }
 
 .header__menu-burger.active::after {
-    transform: rotate(-45deg);
+    transform: rotate(-135deg);
     bottom: 10px;
 }
 
@@ -179,26 +178,138 @@ body {
 
 /*------FILTER---------*/
 
+.filter__title:before {
+    content: '';
+    background-color: #000;
+    position: absolute;
+    width: 22%;
+    height: 2px;
+    left: 56px;
+    top: 3px;
+}
+
+.filter__title.active:before {
+    content: '';
+    background-color: #EF5B70;
+    position: absolute;
+    width: 4.5%;
+    height: 2px;
+    left: 56px;
+    top: 3px;
+}
+
+.filter__title:after {
+    content: '';
+    background-color: #000;
+    position: absolute;
+    width: 15%;
+    height: 2px;
+    top: 7.4px;
+    left: 56px;
+}
+
+
+.filter__title.active:after {
+    content: '';
+    background-color: #EF5B70;
+    position: absolute;
+    width: 3%;
+    height: 2px;
+    top: 7.4px;
+    left: 56px;
+}
+
+.filter__icon {
+    position: absolute;
+    background-color: #000;
+    left: 0;
+    width: 8%;
+    height: 2px;
+    top: 11px;
+    left: 56px;
+}
+
+.filter__icon.active {
+    background-color: #EF5B70;
+    width: 1.5%;
+}
+
 .filter {
     max-width: 670px;
     display: flex;
     justify-content: space-between;
-    padding: 51px 0 64px 16px;
+    padding: 51px 0 34px 16px;
+}
+
+.filter__flex-box {
+    position: relative;
+    width: 350px;
+    padding: 13px 16px 16px 0;
+    min-height: 20px;
+    background-color: #fff;
+}
+
+
+
+.filter__subtitle {
+    display: block;
+    padding-top: 8px;
+    padding-left: 16px;
+    border-left: 5px solid #EF5B70;
+    border-bottom: 1px solid #EBEBEB;
+    margin-bottom: 16px;
+}
+
+.filter__item-list {
+    position: absolute;
 }
 
 .filter__left {
     font-size: 14px;
     font-weight: 600;
-    width: 73px;
+    min-width: 73px;
     height: 17px;
+    position: absolute;
+    z-index: 10;
+    background-color: #fff;
 }
+
+.filter__title {
+    margin-bottom: 16px;
+}
+
+.filer__item-title {
+    background-color: #fff;
+}
+
+.filter__title:first-child {
+    border: none;
+}
+
+.filter__subtitle {
+    color: #EF5B70;
+    height: 37px;
+    width: 327px;
+}
+
+details[open]>summary:first-of-type {
+    list-style-type: none;
+}
+
+details>summary:first-of-type {
+    display: list-item;
+    counter-increment: list-item 0;
+    list-style: none;
+}
+
 
 .filter__left-img {
     padding-left: 10px;
 }
 
 .filter__right {
-    width: 296px;
+    width: 307px;
+    height: 17px;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -216,12 +327,59 @@ body {
 .arrow-down {
     display: inline-block;
     width: 10px;
+    height: 16px;
     padding-left: 10px;
 }
 
 .filter__right-item:first-child {
     padding-left: 0;
 }
+
+
+/*----------FILTER RIGHT------------*/
+
+.filter__size-form {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-left: 22px;
+}
+
+.filter__size-label {
+    color: #6F6E6E;
+    font-size: 14px;
+    padding-bottom: 6px;
+}
+
+.filter__size-input {
+    float: left;
+    margin-right: 9.5px;
+
+}
+
+.filter__size-box {
+    box-sizing: border-box;
+    padding: 7px 20px 6px 10px;
+    width: 79px;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    display: none;
+    flex-direction: column;
+}
+
+.filter__size-box.active {
+    display: flex;
+    box-shadow: 0 0 15px rgb(176 168 168 / 50%);
+    z-index: 10;
+    background-color: white;
+}
+
+.size-arrow-down {
+    padding-left: 10px;
+}
+
+
 
 /*-------PRODUCTS-------*/
 
@@ -266,6 +424,7 @@ body {
 
 .product__price {
     font-size: 16px;
+    color: #F16D7F;
 }
 
 .product__item:hover .product__card-img_hover {

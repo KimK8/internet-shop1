@@ -5,7 +5,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    $('.filter__left').click(function (event) {
+    $('.filter__title').click(function (event) {
         $('.filter__title, .filter__icon').toggleClass('active');
     });
 });

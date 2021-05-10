@@ -130,12 +130,12 @@ body {
 }
 
 .header__menu-burger.active::before {
-    transform: rotate(45deg);
+    transform: rotate(135deg);
     top: 11px;
 }
 
 .header__menu-burger.active::after {
-    transform: rotate(-45deg);
+    transform: rotate(-135deg);
     bottom: 10px;
 }
 

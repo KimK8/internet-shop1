@@ -4,11 +4,11 @@ $(document).ready(function() {
     });
 });
 
-$(document).ready(function() {
-    $('.filter__title').click(function (event) {
-        $('.filter__title, .filter__icon').toggleClass('active');
-    });
-});
+//$(document).ready(function() {
+//    $('.filter__title').click(function (event) {
+//        $('.filter-head, .filter__icon, .filter-menu-list').toggleClass('active');
+//    });
+//});
 
 $(document).ready(function() {
     $('.filter__right-item').click(function (event) {

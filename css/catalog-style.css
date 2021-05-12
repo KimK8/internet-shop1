@@ -231,7 +231,7 @@ body {
     max-width: 670px;
     display: flex;
     justify-content: space-between;
-    padding: 51px 0 32px 16px;
+    padding: 51px 0 64px 16px;
 }
 
 .filter__title {
@@ -501,7 +501,7 @@ body {
 
 .product__item:hover .product__card-img_hover {
     filter: brightness(50%);
-    transition: 0.3s;
+    transition: filter 0.3s;
 }
 
 .product__item:hover .add-box {
@@ -684,7 +684,7 @@ body {
 
 .footer__subscribe-button:hover {
     background-color: #E05C6E;
-    transition: 0.3s;
+    transition: background-color 0.3s;
 }
 
 .footer__subscribe-title-bold {

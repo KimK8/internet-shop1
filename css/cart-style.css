@@ -254,8 +254,8 @@ body {
     background-color: #575757;
     border-radius: 3px;
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 7px;
+    right: -3px;
     transform: rotate(45deg);
 }
 
@@ -266,8 +266,8 @@ body {
     background-color: #575757;
     border-radius: 3px;
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 7px;
+    right: -3px;
     transform: rotate(-45deg);
 }
 

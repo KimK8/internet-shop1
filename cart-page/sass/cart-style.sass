@@ -1,0 +1,469 @@
+$pink-7F: #F16D7F
+$black: #000000
+$white: #FFFFFF
+$grey: #6F6E6E
+$light-grey: #E8E8E8
+$light-rose: #f8f3f4
+$darken-grey: #636363
+$grey-black: #222222
+$dark-grey: #575757
+$pink-70: #EF5B70
+$smoke: #A4A4A4
+$dust: #4A4A4A
+$lighten-grey: #F5F3F3
+$light-smoke: #E2E2E2
+$lighten-smoke: #E1E1E1
+$pink-6E: #E05C6E
+$grey-black-4: #222224
+$white-B: #FBFBFB
+
+*
+  margin: 0
+  padding: 0
+
+  :focus
+  :active
+    outline: none
+
+body
+  font-family: 'Lato', sans-serif
+
+.container
+  margin: 0 auto
+  max-width: 1140px
+
+.pink
+  color: $pink-7F
+  font-size: 24px
+
+.header__menu
+  box-sizing: border-box
+  display: flex
+  justify-content: space-between
+  padding: 17px
+  &-top
+    display: flex
+    align-items: center
+    position: relative
+
+  &-block
+    display: none
+    &.active
+      display: block
+
+.header__top
+  background-color: $black
+  height: 75px
+
+.top
+  display: flex
+  margin-left: 15px
+  &__right
+    display: flex
+    align-items: center
+
+/*------MENU------*/
+
+.header__menu-box
+  box-sizing: border-box
+  width: 232px
+  min-height: 764px
+  background-color: $white
+  position: absolute
+  top: 51px
+  padding: 37px 60px 37px 33px
+  display: flex
+  flex-direction: column
+  box-shadow: 0 5px 10px -5px $grey
+  box-shadow: -3px 0 10px -5px $grey
+  z-index: 10
+
+.menu__title
+  font-size: 14px
+  font-weight: 700
+
+.menu__item
+  margin-top: 20px
+  &-title
+    font-size: 14px
+    font-weight: 400
+    color: $pink-7F
+
+.memu__item-link
+  display: block
+  padding-left: 22px
+  padding-top: 11px
+  text-decoration: none
+  color: $grey
+
+.header__menu-burger
+  display: block
+  position: relative
+  width: 32px
+  height: 23px
+  position: relative
+  z-index: 3
+  span
+    position: absolute
+    background-color: $light-grey
+    left: 0
+    width: 100%
+    height: 2px
+    top: 10px
+    transition: all 0.3s ease 0s
+
+  &::before, &::after
+    content: ''
+    background-color: $white
+    position: absolute
+    width: 100%
+    height: 2px
+    left: 0
+    transition: all 0.3s ease 0s
+
+  &:before
+    top: 0
+
+  &:after
+    bottom: 0
+
+  &.active::before
+    transform: rotate(135deg)
+    top: 11px
+
+  &.active::after
+    transform: rotate(-135deg)
+    bottom: 10px
+
+  &.active span
+    transform: scale(0)
+
+/*------NAVIGATION--------*/
+
+.header__nav-items
+  height: 148px
+  display: flex
+  justify-content: flex-start
+  align-items: center
+
+.header__nav
+  height: 148px
+  background-color: $light-rose
+  &-left
+    font-size: 24px
+    color: $pink-7F
+
+  &-link
+    font-size: 14px
+    color: $darken-grey
+    text-decoration: none
+
+.nav-pink
+  color: $pink-7F
+
+/*-------MAIN-------*/
+
+.shopping__cart
+  margin-top: 96px
+  display: flex
+  justify-content: space-between
+  &_products-item
+    position: relative
+    height: 306px
+    width: 652px
+    display: flex
+    margin-bottom: 40px
+    -webkit-box-shadow: 11px 14px 24px 1px rgba(34, 60, 80, 0.2)
+    -moz-box-shadow: 11px 14px 24px 1px rgba(34, 60, 80, 0.2)
+    box-shadow: 11px 14px 24px 1px rgba(34, 60, 80, 0.2)
+
+  &_products-img
+    width: 262px
+
+  &_product-descr
+    padding: 22px 31px
+
+  &_products-buttons
+    margin-top: 72.5px
+    display: flex
+    justify-content: space-between
+
+.product-name
+  font-size: 24px
+  font-weight: 500
+  color: $grey-black
+  margin-bottom: 42px
+
+.product-details-option
+  list-style: none
+  padding-bottom: 6px
+  font-size: 22px
+  color: $dark-grey
+
+.cart_product-price
+  color: $pink-70
+
+.inline-form
+  display: inline-block
+  padding-left: 24px
+
+.quantity_input_field
+  width: 44px
+
+.close-sign
+  width: 18px
+  height: 18px
+  position: absolute
+  background-color: $white
+  top: 28px
+  right: 22px
+  &::before
+    content: ''
+    width: 23px
+    height: 3px
+    background-color: $dark-grey
+    border-radius: 3px
+    position: absolute
+    top: 7px
+    right: -3px
+    transform: rotate(45deg)
+
+  &::after
+    content: ''
+    width: 23px
+    height: 3px
+    background-color: $dark-grey
+    border-radius: 3px
+    position: absolute
+    top: 7px
+    right: -3px
+    transform: rotate(-45deg)
+
+.button_clear, .button_contin
+  display: block
+  box-sizing: border-box
+  width: 235px
+  height: 50px
+  border: 1px solid $smoke
+  text-align: center
+  padding-top: 14px
+  text-decoration: none
+  color: $black
+  font-weight: 300
+  transition: box-shadow 0.3s
+  &:hover
+    -webkit-box-shadow: 0px 5px 20px 2px rgba(34, 60, 80, 0.13)
+    -moz-box-shadow: 0px 5px 20px 2px rgba(34, 60, 80, 0.13)
+    box-shadow: 0px 5px 20px 2px rgba(34, 60, 80, 0.13)
+
+.shipping_address-n-total
+  width: 360px
+  padding-top: 18px
+
+.shipping_address-title
+  text-transform: uppercase
+  font-size: 16px
+  color: $grey-black
+  font-weight: 100
+  margin-bottom: 20.5px
+
+.shipping_address-field
+  box-sizing: border-box
+  width: 360px
+  height: 45px
+  margin-bottom: 21px
+  padding-left: 16px
+
+.shipping_address-button
+  display: block
+  width: 101px
+  height: 35px
+  border: 1px solid $smoke
+  text-decoration: none
+  font-size: 11px
+  color: $dust
+  text-align: center
+  padding-top: 9.5px
+  box-sizing: border-box
+
+.checkout
+  box-sizing: border-box
+  width: 360px
+  height: 214px
+  background-color: $lighten-grey
+  margin-top: 55px
+  padding-top: 39px
+  &-prices
+    box-sizing: border-box
+    width: 326px
+    display: flex
+    align-items: flex-end
+    flex-direction: column
+    margin-right: 34px
+
+  &_hr
+    width: 275px
+    border: 0.1px solid $light-smoke
+    margin: 0 auto
+    margin-bottom: 17px
+
+  &_button
+    display: block
+    box-sizing: border-box
+    margin: 0 auto
+    width: 273px
+    height: 50px
+    text-align: center
+    background-color: $pink-7F
+    text-decoration: none
+    font-size: 16px
+    color: $white
+    font-weight: 100
+    padding-top: 15px
+    transition: all 0.4s
+    &:hover
+      background-color: $white
+      color: $pink-7F
+      border: 1px solid $pink-7F
+
+.subtotal
+  font-size: 11px
+  color: $dust
+  text-transform: uppercase
+  margin-bottom: 12px
+  &-price
+    padding-left: 20px
+    color: $dust
+
+.grandtotal
+  font-size: 16px
+  color: $grey-black
+  font-weight: 200
+  margin-bottom: 21px
+  &-price
+    padding-left: 23px
+    color: $pink-7F
+    font-weight: 600
+
+  /*-------FOOTER------*/
+
+.footer
+  margin-top: 128px
+  &__bg
+    max-height: 448px
+    background-image: url(../img/background-img.svg)
+    background-repeat: no-repeat
+    background-position: center
+
+  &__subscribe
+    height: 448px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &-desc
+      width: 360px
+      height: 225px
+
+    &-form
+      width: 557px
+      height: 142px
+      display: flex
+      justify-content: space-between
+      flex-direction: column
+      align-items: center
+      box-sizing: border-box
+
+    &-button
+      box-sizing: border-box
+      margin-left: -5px
+      width: 100px
+      height: 49px
+      border-radius: 0 24px 24px 0
+      border: 0
+      background-color: $pink-7F
+      color: $white
+      letter-spacing: 0.5px
+      &:hover
+        background-color: $pink-6E
+        transition: background-color 0.3s
+
+    &-title-bold
+      font-size: 24px
+      font-weight: bold
+      letter-spacing: 0.5px
+      color: $grey-black-4
+      margin-bottom: 10px
+
+    &-title-norm
+      font-size: 18px
+      color: $grey-black-4
+
+    &-title
+      text-align: center
+
+    &-desc
+      display: flex
+      flex-direction: column
+      align-items: center
+
+    &-photo
+      display: block
+      margin-top: -10px
+
+    &-text
+      width: 360px
+      height: 100px
+      font-size: 20px
+      color: $grey-black-4
+      text-align: center
+      margin-top: 20px
+
+  &__email
+    box-sizing: border-box
+    width: 256px
+    height: 49px
+    border-radius: 24px 0 0 24px
+    border: 0
+    background-color: $lighten-smoke
+    padding-left: 18px
+    letter-spacing: 0.5px
+
+  &__bottom
+    width: 100%
+    height: 79px
+    background-color: $grey-black-4
+    &-container
+      height: 79px
+      display: flex
+      justify-content: space-between
+      align-items: center
+
+  &__rights
+    width: 332px
+    height: 19px
+    color: $white-B
+    letter-spacing: 0.5px
+    font-size: 16px
+
+  &__link
+    width: 148px
+    height: 32px
+    display: flex
+    justify-content: space-between
+    &-bg
+      display: flex
+      width: 32px
+      height: 32px
+      justify-content: center
+      align-items: center
+      background-color: $white-B
+      flex-direction: row
+      text-decoration: none
+      color: $black
+      &:hover
+        background-color: $pink-7F
+        transition: 0.3s
+        color: $white
+
+.italic
+  font-style: italic

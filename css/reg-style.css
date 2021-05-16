@@ -300,7 +300,7 @@ body {
     height: 1px;
     background-color: #fff;
     transform: rotate(45deg);
-    top: -2.2px;
+    top: -2px;
     left: 11px;
     transition: background-color 0.3s;
 }
@@ -316,7 +316,7 @@ body {
     height: 1px;
     background-color: #fff;
     transform: rotate(135deg);
-    top: 2.2px;
+    top: 2.3px;
     left: 11px;
     transition: background-color 0.3s;
 }

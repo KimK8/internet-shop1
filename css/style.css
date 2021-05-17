@@ -7,6 +7,11 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+:focus,
+:active {
+    outline: none;
+}
+
 .container {
     margin: 0 auto;
     max-width: 1140px;
@@ -16,7 +21,7 @@ body {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    padding: 17px;
+    padding-top: 17px;
 }
 
 .header__menu-top {
@@ -27,6 +32,10 @@ body {
 .header__top {
     background-color: #000;
     height: 75px;
+}
+
+.header__menu__cart {
+    padding-bottom: 4px;
 }
 
 .header__menu-block {
@@ -53,16 +62,16 @@ body {
 .header__menu-box {
     box-sizing: border-box;
     width: 232px;
-    height: 764px;
+    min-height: 764px;
     background-color: #FFFFFF;
     position: absolute;
-    left: 181px;
     top: 49px;
-    padding: 37px 60px 157px 33px;
+    padding: 37px 60px 37px 33px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 5px 10px -5px #6F6E6E;
-    box-shadow: -3px 0 10px -5px #6F6E6E
+    box-shadow: -3px 0 10px -5px #6F6E6E;
+    z-index: 10;
 }
 
 
@@ -98,6 +107,7 @@ body {
     height: 23px;
     position: relative;
     z-index: 3;
+    cursor: pointer;
 }
 
 .header__menu-burger span {
@@ -279,22 +289,22 @@ body {
 
 .main__top-for_wm:hover {
     background-image: url(../img/for-m-hover.svg);
-    transition: 0.3s;
+    transition: background-image 0.3s;
 }
 
 .main__top-for_m:hover {
     background-image: url(../img/for-m-hover_.svg);
-    transition: 0.3s;
+    transition: background-image 0.3s;
 }
 
 .main__top-for_k:hover {
     background-image: url(../img/for-k-hover.svg);
-    transition: 0.3s;
+    transition: background-image 0.3s;
 }
 
 .main__top-accesories:hover {
     background-image: url(../img/accesories-hover.svg);
-    transition: 0.3s;
+    transition: background-image 0.3s;
 }
 
 /*.center-xl {
@@ -342,7 +352,7 @@ body {
 
 .product__item:hover .product__card-img_hover {
     filter: brightness(50%);
-    transition: 0.3s;
+    transition: filter 0.3s;
 }
 
 .product__item:hover .add-box {
@@ -408,6 +418,7 @@ body {
     height: 48px;
     border: 1px solid #F16D7F;
     margin-top: 25px;
+    transition: background-color 0.3s;
 }
 
 .product__button-link {
@@ -416,12 +427,12 @@ body {
     padding: 14px 37px;
     text-align: center;
     color: #F26376;
+    transition: background-color 0.3s;
 }
 
 .product__button:hover {
     border: 1px solid #F16D7F;
     background-color: #F26376;
-    transition: 0.3s;
 }
 
 .product__button-link:hover {
@@ -430,7 +441,6 @@ body {
     padding: 14px 37px;
     text-align: center;
     color: #FFFFFF;
-    transition: 0.3s;
 }
 
 
@@ -547,11 +557,11 @@ body {
     background-color: #F16D7F;
     color: #FFFFFF;
     letter-spacing: 0.5px;
+    transition: background-color 0.3s;
 }
 
 .footer__subscribe-button:hover {
     background-color: #E05C6E;
-    transition: 0.3s;
 }
 
 .footer__subscribe-title-bold {
@@ -634,11 +644,12 @@ body {
     flex-direction: row;
     text-decoration: none;
     color: #000000;
+    transition: all 0.3s;
 }
 
 .footer__link-bg:hover {
     background-color: #F16D7F;
-    transition: 0.3s;
+
     color: #ffffff;
 }
 

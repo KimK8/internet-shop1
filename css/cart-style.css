@@ -42,6 +42,11 @@ body {
     height: 75px;
 }
 
+.header__menu__cart {
+    padding-bottom: 4px;
+}
+
+
 .header__menu-block {
     display: none;
 }
@@ -68,7 +73,7 @@ body {
     min-height: 764px;
     background-color: #FFFFFF;
     position: absolute;
-    top: 51px;
+    top: 49px;
     padding: 37px 60px 37px 33px;
     display: flex;
     flex-direction: column;
@@ -107,6 +112,7 @@ body {
     height: 23px;
     position: relative;
     z-index: 3;
+    cursor: pointer;
 }
 
 .header__menu-burger span {

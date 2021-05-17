@@ -261,6 +261,7 @@ body {
     width: 167px;
     height: 50px;
     background-color: #F16D7F;
+    border: 1px solid #F16D7F;
     color: #ffffff;
     font-size: 14px;
     text-transform: uppercase;

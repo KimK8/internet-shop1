@@ -39,7 +39,7 @@ body {
 
 .header__top {
     background-color: #000;
-    height: 75px;
+    min-height: 75px;
 }
 
 .header__menu__cart {
@@ -161,7 +161,7 @@ body {
 /*------NAVIGATION--------*/
 
 .header__nav-items {
-    height: 148px;
+    min-height: 148px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -223,6 +223,9 @@ body {
     margin-bottom: 42px;
 }
 
+.product-name-link {
+    text-decoration: none;
+}
 
 .product-details-option {
     list-style: none;
@@ -397,11 +400,12 @@ body {
     height: 50px;
     text-align: center;
     background-color: #F16D7F;
+    border: 1px solid #F16D7F;
     text-decoration: none;
     font-size: 16px;
     color: #fff;
     font-weight: 100;
-    padding-top: 15px;
+    padding-top: 5px;
     transition: all 0.4s;
 }
 
@@ -427,7 +431,7 @@ body {
 }
 
 .footer__subscribe {
-    height: 448px;
+    min-height: 448px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -524,8 +528,7 @@ body {
 }
 
 .footer__bottom-container {
-
-    height: 79px;
+    min-height: 79px;
     display: flex;
     justify-content: space-between;
     align-items: center;

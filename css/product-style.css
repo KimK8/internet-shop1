@@ -38,7 +38,7 @@ body {
 
 .header__top {
     background-color: #000;
-    height: 75px;
+    min-height: 75px;
 }
 
 .header__menu__cart {
@@ -159,7 +159,7 @@ body {
 /*------NAVIGATION--------*/
 
 .header__nav-items {
-    height: 148px;
+    min-height: 148px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -443,7 +443,7 @@ hr {
 }
 
 .footer__subscribe {
-    height: 448px;
+    min-height: 448px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -540,8 +540,7 @@ hr {
 }
 
 .footer__bottom-container {
-
-    height: 79px;
+    min-height: 79px;
     display: flex;
     justify-content: space-between;
     align-items: center;

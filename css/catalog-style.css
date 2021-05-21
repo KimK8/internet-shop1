@@ -201,6 +201,10 @@ body {
     text-decoration: none;
 }
 
+.breadcrumb__item-link:hover {
+    color: #f16d7f
+}
+
 .breadcrumb__item.active {
     color: #f16d7f;
 }
@@ -330,6 +334,10 @@ body {
     font-size: 14px;
     color: #6F6E6E;
     text-decoration: none;
+}
+
+.category-menu-link:hover {
+    color: #F16D7F;
 }
 
 
@@ -542,6 +550,12 @@ body {
     text-decoration: none;
 }
 
+.add:hover {
+    -webkit-box-shadow: 0px 1px 10px 6px rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: 0px 1px 10px 6px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 1px 10px 6px rgba(255, 255, 255, 0.2);
+}
+
 .add-txt {
     color: #ffffff;
     padding-right: 13px;
@@ -572,22 +586,25 @@ body {
     color: #C4C4C4;
 }
 
+.page-link1:hover {
+    color: #EF5B70;
+}
+
 .page-item1:last-child .page-link1 {
     padding-right: 0;
 }
 
-.arrow-left-padding {
-    padding-right: -3px;
-    padding-bottom: 3px;
-}
-
-.arrow-right-padding {
-    padding-right: 0;
-    padding-bottom: 3px;
-}
 
 .active {
     color: #EF5B70;
+}
+
+.arrow-left-padding {
+    padding-top: 2.5px;
+}
+
+.arrow-right-padding {
+    padding-top: 2.5px;
 }
 
 /*-------------FEATURES-----------*/

@@ -236,6 +236,7 @@ body {
     background-size: cover;
     text-align: center;
     text-decoration: none;
+    transition: scale, background-image 0.3s;
 }
 
 .box-xl {
@@ -245,23 +246,23 @@ body {
     position: relative;
     width: 100%;
     height: 180px;
-    background-image: url(../img/accesories.jpg);
+    background-image: url(../img/accesories.svg);
     background-size: cover;
     text-align: center;
     text-decoration: none;
-
+    transition: scale, background-image 0.3s;
 }
 
 .main__top-for_wm {
-    background-image: url(../img/for_wm.jpg);
+    background-image: url(../img/for_wm.svg);
 }
 
 .main__top-for_m {
-    background-image: url(../img/for_m.jpg);
+    background-image: url(../img/for_m.svg);
 }
 
 .main__top-for_k {
-    background-image: url(../img/for_k.jpg);
+    background-image: url(../img/for_k.svg);
 }
 
 .white,
@@ -269,7 +270,14 @@ body {
 .center-xl,
 .pink {
     display: block;
+}
 
+.box:hover .center {
+    transform: scale(1.2);
+}
+
+.box-xl:hover .center-xl {
+    transform: scale(1.2);
 }
 
 .white {
@@ -278,6 +286,7 @@ body {
     font-size: 16px;
     font-family: Lato, sans-serif;
 }
+
 
 /*.center {
     position: absolute;
@@ -295,22 +304,18 @@ body {
 
 .main__top-for_wm:hover {
     background-image: url(../img/for-m-hover.svg);
-    transition: background-image 0.3s;
 }
 
 .main__top-for_m:hover {
     background-image: url(../img/for-m-hover_.svg);
-    transition: background-image 0.3s;
 }
 
 .main__top-for_k:hover {
     background-image: url(../img/for-k-hover.svg);
-    transition: background-image 0.3s;
 }
 
 .main__top-accesories:hover {
     background-image: url(../img/accesories-hover.svg);
-    transition: background-image 0.3s;
 }
 
 /*.center-xl {

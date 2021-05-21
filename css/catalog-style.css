@@ -18,6 +18,11 @@ body {
     max-width: 1140px;
 }
 
+.content {
+    padding-left: 1.5%;
+    padding-right: 1.5%
+}
+
 .pink {
     color: #F16D7F;
     font-size: 24px;

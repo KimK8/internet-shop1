@@ -999,7 +999,7 @@ body {
     }
 
     .product__item {
-        width: 85%;
+        width: 358px;
         margin-bottom: 15px;
     }
 
@@ -1088,5 +1088,11 @@ body {
 
     .footer__subscribe-button {
         width: 80px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .product__item {
+        width: 95%;
     }
 }

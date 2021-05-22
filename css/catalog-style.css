@@ -390,6 +390,7 @@ body {
     border-left: 5px solid #EF5B70;
     display: block;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .filter-n-sort__filter:hover .filter-menu-list {

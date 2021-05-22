@@ -1095,4 +1095,10 @@ body {
     .product__item {
         width: 95%;
     }
+
+    .box,
+    .box-xl {
+        width: 95%;
+        background-position: center;
+    }
 }

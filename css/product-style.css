@@ -98,6 +98,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     color: #F16D7F;
+    text-decoration: none;
 }
 
 .memu__item-link {
@@ -106,6 +107,10 @@ body {
     padding-top: 11px;
     text-decoration: none;
     color: #6F6E6E;
+}
+
+.memu__item-link:hover {
+    color: #F16D7F;
 }
 
 .header__menu-burger {
@@ -804,6 +809,7 @@ hr {
     .header__menu__cart {
         display: none;
     }
+
 
     .header__nav-items {
         flex-direction: column;

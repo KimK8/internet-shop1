@@ -738,7 +738,7 @@ body {
 
 @media screen and (max-width: 576px) {
     .margin-l {
-        margin-left: 46px;
+        margin-left: 47px;
     }
 
     .line-height {
@@ -756,7 +756,7 @@ body {
     }
 
     .margin-left-all {
-        margin-left: 46px;
+        margin-left: 47px;
     }
 
     .margin-top {
@@ -770,7 +770,7 @@ body {
     }
 
     .margin-left-on {
-        margin-left: 46px;
+        margin-left: 47px;
     }
 
     .margin-top {
@@ -784,7 +784,7 @@ body {
     }
 
     .margin-left-426 {
-        margin-left: 46px;
+        margin-left: 47px;
     }
 
     .margin-top {
@@ -794,21 +794,19 @@ body {
 
 @media screen and (max-width: 415px) {
     .margin-left-415 {
-        margin-left: 46px;
+        margin-left: 47px;
     }
 }
 
 @media screen and (max-width: 330px) {
+
+    .margin-left-330,
     .margin-left-330 {
-        margin-left: 46px;
+        margin-left: 47px;
     }
 
     .margin-left-415 {
         margin-left: 0;
-    }
-
-    .margin-left-330 {
-        margin-left: 46px;
     }
 }
 
@@ -816,7 +814,7 @@ body {
 
     .margin-left-326,
     .margin-l {
-        margin-left: 46px;
+        margin-left: 47px;
     }
 
     .margin-left-426 {

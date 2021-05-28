@@ -863,6 +863,10 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+    body.lock {
+        overflow: hidden;
+    }
+
     .header__menu-block {
         position: fixed;
         top: 5px;
@@ -931,9 +935,6 @@ body {
 
 
 @media screen and (max-width: 768px) {
-    body.lock {
-        overflow: hidden;
-    }
 
     .header__menu__acc,
     .header__menu__cart {

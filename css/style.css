@@ -713,6 +713,10 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+    body.lock {
+        overflow: hidden;
+    }
+
     .header__menu-block {
         position: fixed;
         top: 5px;
@@ -815,10 +819,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    body.lock {
-        overflow: hidden;
-    }
-
     .header__menu-box {
         top: 51px;
     }

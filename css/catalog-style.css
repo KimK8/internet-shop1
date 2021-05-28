@@ -79,13 +79,17 @@ body {
     min-height: 764px;
     background-color: #FFFFFF;
     position: absolute;
-    top: 50px;
+    top: -1050px;
     padding: 37px 60px 37px 33px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 5px 10px -5px #6F6E6E;
     box-shadow: -3px 0 10px -5px #6F6E6E;
     z-index: 10;
+}
+
+.header__menu-box.active {
+    top: 50px;
 }
 
 .menu__title {

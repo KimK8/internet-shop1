@@ -44,7 +44,7 @@ body {
 }
 
 /*.header__menu-block {
-    display: none;
+    top: -1050px;
 }*/
 
 .header__menu-block.active {
@@ -71,7 +71,7 @@ body {
     min-height: 764px;
     background-color: #FFFFFF;
     position: absolute;
-    top: 49px;
+    top: -1050px;
     left: 70px;
     padding: 37px 60px 37px 33px;
     display: flex;
@@ -79,6 +79,10 @@ body {
     box-shadow: 0 5px 10px -5px #6F6E6E;
     box-shadow: -3px 0 10px -5px #6F6E6E;
     z-index: 10;
+}
+
+.header__menu-box.active {
+    top: 49px;
 }
 
 .header__menu-burger.active::before {

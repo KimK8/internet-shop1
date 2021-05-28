@@ -58,6 +58,7 @@ body {
 
 .header__menu-block.active {
     display: block;
+    overflow: auto;
 }
 
 .top {
@@ -624,6 +625,7 @@ body {
         width: 100%;
         height: 100%;
         position: static;
+        overflow: auto;
     }
 
     .top__left {
